@@ -106,8 +106,6 @@ app.post('/track', upload.single('file'), async (req, res) => {
   ipfsURL.password = KALEIDO_AUTH_PASSWORD;
   ipfsURL.pathname = "/api/v0/add";
 
-  console.log(req.file);
-
   const formData = {
     file: req.file.buffer
   }

@@ -87,6 +87,7 @@ function App() {
     setSuccess(true);
     setOpen(true);
     setFile(null);
+    setFileName("");
     setUploading(false);
   }
 
@@ -104,6 +105,7 @@ function App() {
         setErrorMsg(error);
       })
 
+    console.log(tracks);
     setLoading(false);
   }
 
