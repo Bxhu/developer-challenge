@@ -1,60 +1,45 @@
-.App {
-  text-align: center;
+/* body {
+  background-color: #171717;
+  color: white;
+} */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.App-logo {
-  height: 150px;
+.file-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 40%;
+  min-width: 400px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07); 
 }
 
-.App-logo[aria-busy="true"] {
-  animation-name: ckw;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+.file-confirm {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes ckw {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
+.confirm-buttons {
+  margin-top: 20px;
+  margin-bottom: auto;
 }
 
-.App-link {
-  color: #3842C1;
-}
-
-.App-input {
-  font-size: calc(10px + 2vmin);
-  margin-right: 25px;
-}
-
-.App-button {
-  background-color: #3842C1;
-  color: #ffffff;
-  border: #ffffff solid 3px;
-  border-radius: 50px;
-  padding: 20px;
-  font-size: 25px;
-  cursor: pointer;
-  outline: none;
-}
-
-.App-button:active {
-  background-color: #ffffff;
-  color: #3842C1;
-  border-color: #3842C1;
-}
-
-.App-button:disabled {
-  background-color: #e0e0e0;
-}
-
-.App-error {
-  color: #ff5050;
-  font-family: monospace;
-  text-align: left;
-  padding-left: 50px;
-  padding-right: 50px;
+.tracks-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
